@@ -13,9 +13,6 @@ app.post('/proxy', async (req, res) => {
     
     const visionPrompt = `
       Analyze this job application form using both visual layout and HTML structure.
-      SCREENSHOT CONTEXT:
-      - Field positions and visual labels
-      - Input types (text/radio/checkbox/dropdown)
       HTML CONTEXT:
       - Field names/IDs: ${extractFieldMetadata(html)}
       - Form structure
